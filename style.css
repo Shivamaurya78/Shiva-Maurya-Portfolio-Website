@@ -223,7 +223,8 @@ h3 {
 
 
 .about-section {
-  background: #161b22;
+  /* background: #161b22; */
+ background-color:  #121b2f;
   border-radius: 20px;
   box-shadow: 0 0 20px #6366f1;
   padding: 30px 30px 40px;
