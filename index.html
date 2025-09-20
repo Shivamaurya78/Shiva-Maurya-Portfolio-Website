@@ -1,0 +1,674 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- <title>Shiva Maurya Portfolio</title> -->
+  <title>Shiva Maurya Portfolio Software Developer || Web Developer</title>
+<meta name="description" content="Shiva Maurya - Software Developer Portfolio showcasing projects in HTML, CSS, JavaScript.">
+<meta name="keywords" content="Shiva Maurya, Software Developer, Portfolio, Web Developer, HTML CSS JS">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="certifi.css">
+  <!-- <link rel="stylesheet" href="project.css"> -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    /* Modern UI Enhancements for Profile/About Section */
+    .profile-about-container {
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .profile-card {
+      background: linear-gradient(135deg, #161b22 0%, #1e293b 50%, #161b22 100%);
+      background-size: 200% 200%;
+      animation: gradientFlow 3s ease-in-out infinite;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent, rgba(252, 163, 17, 0.1), transparent);
+      animation: shimmer 2s linear infinite;
+      pointer-events: none;
+    }
+
+    .social-icons a.social-btn {
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a.social-btn:hover {
+      animation: bounce 0.6s ease;
+    }
+
+    .profile-card.slide-up {
+      animation: slideUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes shimmer {
+      0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+      100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-10px); }
+      60% { transform: translateY(-5px); }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Enhancements */
+    @media (max-width: 768px) {
+      .profile-about-container {
+        flex-direction: column;
+      }
+      .profile-card, .about-section {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="logo">SM</div>
+    <ul class="nav-links">
+      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="resume.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Resume</a></li>
+      <li><a href="#skills-section"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="#achievements"><i class="fas fa-award"></i> Achievements</a></li>
+      <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+      <li><a href="#blogs"><i class="fas fa-newspaper"></i> Blogs</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="profile-about-container">
+      <div class="profile-card">
+        <h1>SHIVA MAURYA</h1>
+        <h1 class="role" id="role-text">SOFTWARE DEVELOPER</h1>
+        <img src="resumephoto2_page-0001.jpg" alt="Profile Photo" class="profile-pic" />
+        <!-- <p class="role">SOFTWARE DEVELOPER</p> -->
+        <p class="role">              </p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/kartik_maurya78/" aria-label="Instagram" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/Shivamaurya78" aria-label="GitHub" class="social-btn"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/shiva-maurya-9849a42b9" aria-label="LinkedIn" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="WhatsApp" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="Facebook" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+
+        </div>
+        <div class="action-buttons">
+          <a href="Shva_Resume.docx" class="btn" download>Resume <i class="fas fa-download"></i></a>
+          <a href="mailto:shiva89maurya@gmail.com" class="btn">Contact Me <i class="fas fa-paper-plane"></i></a>
+        </div>
+      </div>
+
+      <div class="about-section" id="about">
+        <h2>About <span>Me</span></h2>
+        <p>
+          I am a passionate Web Developer with a strong foundation in Java, Python, and Data Structures & Algorithms.
+          With hands-on experience in Web Development, I specialize in building scalable, user-friendly, and efficient applications.
+          My expertise spans both frontend and backend technologies, enabling me to deliver complete end-to-end solutions.
+        </p>
+<div class="my-skills" id="skills">
+  <span>JAVA</span>
+  <span>PYTHON</span>
+  <span>DSA</span>
+  <span>OOPS Concept</span>
+  <span>HTML</span>
+  <span>CSS</span>
+  <span>JavaScript</span>
+  <span>ReactJs</span>
+  <span>Node.Js</span>
+  <span>My Sql</span>
+  <span>Mongo DB</span>
+  <span>GitHub</span>
+</div>
+        <div class="contact-info" id="contact-info-summary">
+          <div>
+            <p><strong>Phone:</strong> +91 - 7877039974 </p>
+            <p><strong>Skype:</strong> Shiva Maurya</p>
+            <p><strong>Language:</strong> Rajasthani, English, Hindi</p>
+          </div>
+          <div>
+            <p><strong>Email:</strong> shiva89maurya@gmail.com</p>
+            <p><strong>Github:</strong> <a href="https://github.com/Shivamaurya78" target="_blank">github.com/Shivamaurya78</a></p>
+          </div>
+        </div>
+        <div class="stats">
+          <div>
+            <h3>05+</h3>
+            <p>Handled Projects</p>
+          </div>
+          <div>
+            <h3>05+</h3>
+            <p>Open Source</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages-section" id="skills-section">
+      <div class="advantages-pill">
+        <i class="fas fa-graduation-cap"></i> SKILLS
+      </div>
+      <h1 class="advantages-title">
+        My <strong>Advantages</strong>
+      </h1>
+      <p class="advantages-description">
+       Proficient in web development (HTML, CSS, JavaScript, and modern frameworks) and programming with Java, Python, and Data Structures & Algorithms (DSA). Experienced in building responsive, interactive, and efficient applications, with a strong focus on clean code, problem-solving, and optimized solutions
+      </p>
+      <div class="advantages-grid">
+        <div class="advantage-card">
+          <div class="icon-container java">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="Java" />
+          </div>
+          <div class="progress-circle" data-progress="80">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="circle-bg"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="80, 100"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <div class="percentage-text"></div>
+          </div>
+          <div class="skill-name">Java</div>
+        </div>
+        
+        <div class="advantage-card">
+          <div class="icon-container python">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" />
+          </div>
+          <div class="progress-circle" data-progress="85">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="circle-bg"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="85, 100"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <div class="percentage-text"></div>
+          </div>
+          <div class="skill-name">Python</div>
+        </div>
+        <div class="advantage-card">
+          <div class="icon-container dsa">
+            <img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" alt="DSA" />
+          </div>
+          <div class="progress-circle" data-progress="75">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="circle-bg"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <div class="percentage-text"></div>
+          </div>
+          <div class="skill-name">DSA</div>
+        </div>
+        <div class="advantage-card">
+          <div class="icon-container html5">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5" />
+          </div>
+          <div class="progress-circle" data-progress="90">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="circle-bg"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="90, 100"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <div class="percentage-text"></div>
+          </div>
+          <div class="skill-name">HTML5</div>
+        </div>
+        <div class="advantage-card">
+          <div class="icon-container css3">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3" />
+          </div>
+          <div class="progress-circle" data-progress="60">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="circle-bg"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="60, 100"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <div class="percentage-text"></div>
+          </div>
+          <div class="skill-name">CSS3</div>
+        </div>
+        <div class="advantage-card">
+          <div class="icon-container javascript">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" />
+          </div>
+          <div class="progress-circle" data-progress="70">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="circle-bg"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="70, 100"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <div class="percentage-text"></div>
+          </div>
+          <div class="skill-name">JavaScript</div>
+        </div>
+        <div class="advantage-card">
+          <div class="icon-container mysql">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt="MySQL" />
+          </div>
+          <div class="progress-circle" data-progress="70">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="circle-bg"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="70, 100"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <div class="percentage-text"></div>
+          </div>
+          <div class="skill-name">MySQL</div>
+        </div>
+        <div class="advantage-card">
+          <div class="icon-container react">
+            <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" />
+          </div>
+          <div class="progress-circle" data-progress="85">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="circle-bg"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="85, 100"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <div class="percentage-text"></div>
+          </div>
+          <div class="skill-name">React</div>
+        </div>
+        <div class="advantage-card">
+          <div class="icon-container nodejs">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="Node.js" />
+          </div>
+          <div class="progress-circle" data-progress="80">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="circle-bg"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="80, 100"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <div class="percentage-text"></div>
+          </div>
+          <div class="skill-name">Node.js</div>
+        </div>
+         <div class="advantage-card">
+          <div class="icon-container dsa">
+            <img src="https://th.bing.com/th?q=GitHub+Logo+Without+Background&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="DSA" />
+          </div>
+          <div class="progress-circle" data-progress="75">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="circle-bg"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+                stroke-dasharray="75, 100"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <div class="percentage-text"></div>
+          </div>
+          <div class="skill-name">GitHub</div>
+        </div>
+      </div>
+    </section>
+
+      <section class="certifications-section" id="achievements">
+        <div class="container">
+            <div class="label">
+                <i class="fas fa-award"></i> CERTIFICATIONS
+            </div>
+            <h2>My <span>Achievements</span></h2>
+            <p>
+                Professional certifications and achievements that demonstrate my expertise and commitment to continuous learning in software development and programming.
+            </p>
+            <div class="certifications-container">
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="cert-title">
+                            <h3>Java DSA Intern</h3>
+                            <div class="cert-meta">
+                                <span class="duration"><i class="fas fa-calendar"></i> 07/2025 – 10/2025</span>
+                                <span class="type"><i class="fas fa-map-marker-alt"></i> Offline</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-description">
+                        <ul>
+                            <li>Built a comprehensive Library Management System using Java and MySQL</li>
+                            <li>Applied Data Structures and Algorithms (DSA) concepts for efficient data handling</li>
+                            <li>Implemented Object-Oriented Programming (OOP) principles throughout the project</li>
+                        </ul>
+                    </div>
+                    <div class="cert-tags">
+                        <span class="tag java">#Java</span>
+                        <span class="tag mysql">#MySQL</span>
+                        <span class="tag dsa">#DSA</span>
+                        <span class="tag oop">#OOP</span>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="cert-title">
+                            <h3>Full Stack & Web Development</h3>
+                            <div class="cert-meta">
+                                <span class="duration"><i class="fas fa-calendar"></i> Date</span>
+                                <span class="type"><i class="fas fa-globe"></i> Mode</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-description">
+                        <ul>
+                            <li>Developed full-stack web applications using HTML, CSS, JavaScript, Node.js, MongoDB, and React</li>
+                            <li>Implemented responsive, interactive websites with RESTful APIs, authentication, and UI/UX best practices</li>
+                            <li>Built modern web applications with clean, maintainable code and optimal performance</li>
+                        </ul>
+                    </div>
+                    <div class="cert-tags">
+                        <span class="tag html">#HTML</span>
+                        <span class="tag css">#CSS</span>
+                        <span class="tag js">#JavaScript</span>
+                        <span class="tag nodejs">#NodeJS</span>
+                        <span class="tag mongodb">#MongoDB</span>
+                        <span class="tag react">#React</span>
+                        <span class="tag api">#RESTfulAPI</span>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon elite">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-title">
+                            <h3>Java Programming</h3>
+                            <div class="cert-badge">Elite+Silver</div>
+                            <div class="cert-meta">
+                                <span class="duration"><i class="fas fa-calendar"></i> 01/2025 – 06/2025</span>
+                                <span class="type"><i class="fas fa-globe"></i> Online</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-description">
+                        <ul>
+                            <li>Completed 6-month certification with Elite+Silver distinction from NPTEL – IIT Kharagpur</li>
+                            <li>Gained comprehensive expertise in Object-Oriented Programming (OOP)</li>
+                            <li>Mastered Java Collections framework and data structures</li>
+                            <li>Acquired advanced knowledge in JDBC and database connectivity</li>
+                            <li>Developed proficiency in multithreading and concurrent programming</li>
+                        </ul>
+                    </div>
+                    <div class="cert-tags">
+                        <span class="tag java">#Java</span>
+                        <span class="tag oop">#OOP</span>
+                        <span class="tag collections">#Collections</span>
+                        <span class="tag jdbc">#JDBC</span>
+                        <span class="tag multithreading">#Multithreading</span>
+                        <span class="tag nptel">#NPTEL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="label">
+          <i class="fas fa-code"></i> PROJECTS
+        </div>
+        <h2>My <span>Projects</span></h2>
+        <p>
+         Developed 4+ custom websites, delivering responsive, user-friendly, and high-quality solutions tailored to client requirements. These projects enhanced my expertise in modern web development, UI/UX design, and front-end technologies
+        </p>
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="https://www.satyamsah.com/images/digine[tronics.png" alt="Business website" />
+            <h3>Business website</h3>
+            <p>A modern, responsive business website built with React and Django, featuring dynamic content management and seamless user experience.</p>
+            <div class="tech-tags">
+              <span class="react">#react</span>
+              <span class="tailwind">#tailwind</span>
+              <span class="django">#django</span>
+              <span class="js">#js</span>
+              <span class="python">#python</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn github"><i class="fab fa-github"></i> Github</a>
+              <a href="#" class="btn view"><i class="fas fa-eye"></i> View</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="https://www.satyamsah.com/images/site.png" alt="Education Website" />
+            <h3>Education Website</h3>
+            <p>An interactive educational platform built with HTML, CSS, JS, and PHP, designed to provide engaging learning experiences for students.</p>
+            <div class="tech-tags">
+              <span class="html">#HTML</span>
+              <span class="css">#CSS</span>
+              <span class="js">#JS</span>
+              <span class="php">#PHP</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn github"><i class="fab fa-github"></i> Github</a>
+              <a href="#" class="btn view"><i class="fas fa-eye"></i> View</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="https://www.bing.com/th/id/OIP.6jjIEDJQo5Nk53tLKBcX2gHaEc?w=244&h=211&c=8&rs=1&qlt=90&o=6&cb=thwsc5&dpr=1.5&pid=3.1&rm=2" alt="Ecommerce Website" />
+            <h3>Ecommerce Website</h3>
+            <p>A full-featured e-commerce platform developed with React and Node.js, offering secure payments, inventory management, and user-friendly shopping experience.</p>
+            <div class="tech-tags">
+              <span class="react">#react</span>
+              <span class="css">#CSS</span>
+              <span class="js">#JS</span>
+              <span class="node">#NodeJS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Shivamaurya78/E-Commerce-Website" class="btn github" target="_blank"><i class="fab fa-github"></i> Github</a>
+              <a href="http://127.0.0.1:3002/Ecommerce.html" class="btn view" target="_blank"><i class="fas fa-eye"></i> View</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="https://www.bing.com/th/id/OIP.x-ay2vzIIj0eI1WMSJo1IwHaH0?w=175&h=211&c=8&rs=1&qlt=90&o=6&cb=thwsc5&dpr=1.5&pid=3.1&rm=2" alt="Tic Toe Game" />
+            <h3>Tic Toe Game</h3>
+            <p>An interactive Tic-Tac-Toe game built with HTML, CSS, and JavaScript, featuring player vs player mode and win detection logic.</p>
+            <div class="tech-tags">
+              <span class="html">#HTML</span>
+              <span class="css">#CSS</span>
+              <span class="js">#JS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Shivamaurya78/Tic-Tac-Toe-Game" class="btn github" target="_blank" ><i class="fab fa-github"></i> Github</a>
+              <a href="http://127.0.0.1:3002/tic2.html" target="_blank" class="btn view"><i class="fas fa-eye"></i> View</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="https://www.bing.com/th/id/OIP.H-gKPZmwBgL65f-qZwUNUAHaDt?w=265&h=211&c=8&rs=1&qlt=90&o=6&cb=thwsc5&dpr=1.5&pid=3.1&rm=2" alt="AI Chat Box" />
+            <h3>AI Chat Box</h3>
+            <p>An AI-powered chat application built with React, featuring natural language processing and interactive conversations for enhanced user engagement.</p>
+            <div class="tech-tags">
+              <span class="react">#react</span>
+              <span class="js">#JS</span>
+              <span class="css">#CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn github"><i class="fab fa-github"></i> Github</a>
+              <a href="#" class="btn view"><i class="fas fa-eye"></i> View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h1>Contact Me..</h1><br>
+        <!-- <p class="description">
+          Feel free to contact me for any of your web development needs. I'm here to help bring your projects to life with high quality and timely delivery.
+        </p> -->
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="info-item">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+                <path d="M12 21c-4.418 0-8-5.373-8-9.5a8 8 0 0116 0c0 4.127-3.582 9.5-8 9.5z"/>
+                <circle cx="12" cy="11" r="3"/>
+                <path d="M12 21v-2"/>
+              </svg>
+              <div>
+                <h3>Location</h3>
+                <p>Bhopal [MP] India </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="#fbbf24" viewBox="0 0 24 24" width="28" height="28">
+                <path d="M2 6v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2H4a2 2 0 00-2 2z"/>
+                <path fill="#fff" d="M22 6l-10 7L2 6"/>
+              </svg>
+              <div>
+                <h3>E-mail</h3>
+                <p>shiva89maurya@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 3h-8a2 2 0 00-2 2v2h12V5a2 2 0 00-2-2z"/>
+                <circle cx="18" cy="16" r="3"/>
+                <path d="M20.5 18.5l-3-3"/>
+              </svg>
+              <div>
+                <h3>Phone</h3>
+                <p>+91-7877039974</p>
+              </div>
+            </div>
+          </div>
+          <form action="https://formspree.io/f/mkgvdrnl" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Full Name" required />
+            <input type="text" name="phone" placeholder="Phone Number " required>
+            <input type="email" name="email" placeholder="something@gmail.com" required />
+            <textarea name="message" placeholder="Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="skill.js"></script>
+  <script src="certifi.js"></script>
+  <script src="main.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,194 @@
+:root {
+    --dark-bg: #0f172a;
+    --dark-bg-light: #1e293b;
+    --orange: #f59e0b;
+    --text-light: #e0e0e0;
+    --text-muted: #a0aec0;
+    --shadow-glow: rgba(245, 158, 11, 0.5);
+    --border-radius: 12px;
+    --btn-bg: #1e293b;
+    --btn-hover-bg: #334155;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+}
+
+.projects-section {
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+    padding: 20px;
+}
+
+.container {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+    background-size: 200% 200%;
+    border-radius: 16px;
+    padding: 32px 40px;
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+    animation: containerFlow 4s ease-in-out infinite;
+}
+
+@keyframes containerFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.projects-section .label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--orange);
+    background-color: var(--dark-bg-light);
+    padding: 6px 14px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 8px var(--shadow-glow);
+    width: fit-content;
+    margin: 0 auto 16px auto;
+}
+
+.projects-section .label i {
+    font-size: 1.1rem;
+}
+
+.projects-section h2 {
+    font-weight: 400;
+    font-size: 2.8rem;
+    margin: 0 0 12px 0;
+    text-align: center;
+}
+
+.projects-section h2 span {
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.projects-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    max-width: 700px;
+    margin-bottom: 32px;
+}
+
+.projects-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background: linear-gradient(135deg, var(--dark-bg-light) 0%, #334155 50%, var(--dark-bg-light) 100%);
+    background-size: 200% 200%;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6), 0 0 0 1px rgba(245, 158, 11, 0.1);
+    width: 280px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-light);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-play-state: paused;
+}
+
+.project-card:nth-child(1) { animation-delay: 0s; }
+.project-card:nth-child(2) { animation-delay: 0.15s; }
+.project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-card:nth-child(4) { animation-delay: 0.45s; }
+.project-card:nth-child(5) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 32px var(--shadow-glow);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    margin-bottom: 12px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+.project-card h3 {
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+
+.tech-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.tech-tags span {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.react { color: #61dafb; }
+.tailwind { color: #38bdf8; }
+.django { color: #0c4a6e; }
+.js { color: #facc15; }
+.python { color: #3776ab; }
+.html { color: #e34c26; }
+.css { color: #264de4; }
+.php { color: #8993be; }
+
+.project-links {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: var(--border-radius);
+    background-color: var(--btn-bg);
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 0 6px transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-bg);
+    box-shadow: 0 0 8px var(--shadow-glow);
+}
+
+.btn.github i {
+    font-size: 1.1rem;
+}
+
+.btn.view i {
+    font-size: 1.1rem;
+}
