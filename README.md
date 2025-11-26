@@ -28,3 +28,5 @@ Hosting: GitHub Pages / Netlify / Vercel
 🚀 Live Demo
 
 🔗 View Portfolio
+https://shivamauryaportfolio.netlify.app/
+
